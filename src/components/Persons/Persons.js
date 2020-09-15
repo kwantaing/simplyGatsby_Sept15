@@ -12,13 +12,7 @@ const Persons = props => {
   }
   return props.persons.map((person, index) => {
     return (
-      <div key={person.id} style={style}>
-        <p>
-          I'm {person.name} and I am {person.age} years old.
-        </p>
-        <button onClick={() =>props.clicked(index)}>Birthday!</button>
-      </div>
-    //   <Person person={person} clicked ={() => props.clicked(index)}></Person>
+      <Person person={person} clicked ={() => props.clicked(index)}></Person>
     )
   })
 }
