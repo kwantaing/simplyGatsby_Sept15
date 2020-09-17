@@ -7,9 +7,10 @@ const CoffeeTypes = (props) => {
   const allCoffeeTypes = props.pageContext.allCoffeeTypes;
   return (
     <Layout>
-      {allCoffeeTypes.map(coffeetype => {
+      {allCoffeeTypes && allCoffeeTypes.map(coffeetype => {
         return (
           <CoffeeType key={coffeetype.id} coffeetype={coffeetype}></CoffeeType>
+
         )
       })}
     </Layout>

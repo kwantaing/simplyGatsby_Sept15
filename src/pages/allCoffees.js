@@ -8,9 +8,10 @@ const AllCoffeePage = props => {
   return (
     <Layout>
       <div style={style}>
-        {allCoffees.map(coffee => {
-          return <CoffeeCard key={coffee.id} coffee={coffee}></CoffeeCard>
-        })}
+        {allCoffees &&
+          allCoffees.map(coffee => {
+            return <CoffeeCard key={coffee.id} coffee={coffee}></CoffeeCard>
+          })}
       </div>
     </Layout>
   )
