@@ -40,6 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
       allContentfulCoffee {
         nodes {
+          id
           coffeeName
           coffeeImage {
             fluid {
